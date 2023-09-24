@@ -24,7 +24,7 @@ include("include/nav.php");
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="mb-3">School Facilities</h1>
-            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            <p>At Kinder, we believe that a well-equipped and nurturing environment is essential for your child's overall growth and development. Our state-of-the-art facilities are designed to ensure your child's safety, well-being, and a positive learning experience.</p>
         </div>
         <div class="row g-4">
             <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -36,7 +36,7 @@ include("include/nav.php");
                     </div>
                     <div class="facility-text bg-primary">
                         <h3 class="text-primary mb-3">School Bus</h3>
-                        <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                        <p class="mb-0">Our buses are equipped with safety measures, experienced drivers, and trained staff to ensure your child's journey to and from Kinder is comfortable and worry-free.</p>
                     </div>
                 </div>
             </div>
@@ -49,7 +49,7 @@ include("include/nav.php");
                     </div>
                     <div class="facility-text bg-success">
                         <h3 class="text-success mb-3">Playground</h3>
-                        <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                        <p class="mb-0">Our playground is equipped with age-appropriate equipment, safety measures, and supervision to ensure your child's playtime is not only enjoyable but also safe.</p>
                     </div>
                 </div>
             </div>
@@ -62,7 +62,7 @@ include("include/nav.php");
                     </div>
                     <div class="facility-text bg-warning">
                         <h3 class="text-warning mb-3">Healthy Canteen</h3>
-                        <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                        <p class="mb-0">We prioritize fresh, wholesome ingredients and work with nutrition experts to provide balanced meals that promote your child's well-being.</p>
                     </div>
                 </div>
             </div>
@@ -75,7 +75,7 @@ include("include/nav.php");
                     </div>
                     <div class="facility-text bg-info">
                         <h3 class="text-info mb-3">Positive Learning</h3>
-                        <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                        <p class="mb-0">. We promote a culture of respect, kindness, and inclusivity to ensure that your child's emotional and social development is as important as their academic progress.</p>
                     </div>
                 </div>
             </div>

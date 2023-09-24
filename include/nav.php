@@ -1,5 +1,5 @@
 <body>
-    <div class="container-xxl bg-white p-0">
+    <div class="bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -26,14 +26,12 @@
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Other</a>
                         <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
                             <a href="facility.php" class="dropdown-item">School Facilities</a>
-                            <a href="team.php" class="dropdown-item">Popular Teachers</a>
                             <a href="appointment.php" class="dropdown-item">Make Appointment</a>
-                            <a href="testimonial.php" class="dropdown-item">Testimonial</a>
+                            <a href="testimonial.php" class="dropdown-item">Testimonials</a>
                         </div>
                     </div>
-                    <a href="contact.php" class="nav-item nav-link">Contact Us</a>
                 </div>
-                <a href="" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Join Us<i class="fa fa-arrow-right ms-3"></i></a>
+                <a href="contact.php" class="btn btn-primary rounded-pill px-3 d-none d-lg-block">Contact Us<i class="fa fa-arrow-right ms-3"></i></a>
             </div>
         </nav>
         <!-- Navbar End -->

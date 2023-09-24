@@ -10,8 +10,7 @@ include("include/nav.php");
         <h1 class="display-2 text-white animated slideInDown mb-4">About Us</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                 <li class="breadcrumb-item text-white active" aria-current="page">About Us</li>
             </ol>
         </nav>
@@ -26,20 +25,11 @@ include("include/nav.php");
         <div class="row g-5 align-items-center">
             <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h1 class="mb-4">Learn More About Our Work And Our Cultural Activities</h1>
-                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos, ipsum labore duo duo sit no sea diam. Et dolor et kasd ea. Eirmod diam at dolor est vero nonumy magna.</p>
+                <p>At Kinder, we are committed to not only providing a top-tier education but also nurturing a rich cultural tapestry within our learning environment. Our cultural activities go beyond textbooks, allowing children to explore the world's diversity through celebrations, art, music, language, and engaging workshops.</p>
+                <p class="mb-4">We believe that these experiences not only broaden their horizons but also instill a profound respect for different cultures, fostering empathy and understanding from an early age.</p>
                 <div class="row g-4 align-items-center">
                     <div class="col-sm-6">
-                        <a class="btn btn-primary rounded-pill py-3 px-5" href="">Read More</a>
-                    </div>
-                    <div class="col-sm-6">
-                        <div class="d-flex align-items-center">
-                            <img class="rounded-circle flex-shrink-0" src="img/user.jpg" alt="" style="width: 45px; height: 45px;">
-                            <div class="ms-3">
-                                <h6 class="text-primary mb-1">Jhon Doe</h6>
-                                <small>CEO & Founder</small>
-                            </div>
-                        </div>
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="classes.php">Our Classes</a>
                     </div>
                 </div>
             </div>
@@ -74,11 +64,9 @@ include("include/nav.php");
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
                     <div class="h-100 d-flex flex-column justify-content-center p-5">
-                        <h1 class="mb-4">Become A Teacher</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
-                            Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
-                        </p>
-                        <a class="btn btn-primary py-3 px-5" href="">Get Started Now<i class="fa fa-arrow-right ms-2"></i></a>
+                        <h1 class="mb-4">Join Kider Community</h1>
+                        <p class="mb-4"> At Kider, we believe in fostering a nurturing and stimulating environment that allows your child to grow, learn, and flourish.</p>
+                        <a class="btn btn-primary py-3 px-5" href="contact.php">Join Us Now<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -87,62 +75,6 @@ include("include/nav.php");
 </div>
 <!-- Call To Action End -->
 
-
-<!-- Team Start -->
-<div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h1 class="mb-3">Popular Teachers</h1>
-            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit
-                eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="team-item position-relative">
-                    <img class="img-fluid rounded-circle w-75" src="img/team-1.jpg" alt="">
-                    <div class="team-text">
-                        <h3>Full Name</h3>
-                        <p>Designation</p>
-                        <div class="d-flex align-items-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="team-item position-relative">
-                    <img class="img-fluid rounded-circle w-75" src="img/team-2.jpg" alt="">
-                    <div class="team-text">
-                        <h3>Full Name</h3>
-                        <p>Designation</p>
-                        <div class="d-flex align-items-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="team-item position-relative">
-                    <img class="img-fluid rounded-circle w-75" src="img/team-3.jpg" alt="">
-                    <div class="team-text">
-                        <h3>Full Name</h3>
-                        <p>Designation</p>
-                        <div class="d-flex align-items-center">
-                            <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-square btn-primary  mx-1" href=""><i class="fab fa-instagram"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Team End -->
 
 
 <?php
