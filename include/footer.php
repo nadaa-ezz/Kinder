@@ -18,7 +18,7 @@
                         <h3 class="text-white mb-4">Quick Links</h3>
                         <a class="btn btn-link text-white-50" href="about.php">About Us</a>
                         <a class="btn btn-link text-white-50" href="contact.php">Contact Us</a>
-                        <a class="btn btn-link text-white-50" href="classess.php">Classes</a>
+                        <a class="btn btn-link text-white-50" href="classes.php">Classes</a>
                         <a class="btn btn-link text-white-50" href="facility.php">Facilities</a>
                     </div>
                     <div class="col-lg-3 col-md-6 my-2 ">
@@ -51,7 +51,7 @@
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                             &copy; <a class="border-bottom" href="#">Kinder</a>, All Right Reserved.
 
-                            Designed By <a class="border-bottom" href="https://cts-egy.com/">core Technology Solutions</a>
+                            Designed By <a class="border-bottom" href="https://cts-egy.com/">Core Technology Solutions</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
