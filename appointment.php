@@ -9,8 +9,7 @@ include("include/nav.php");
         <h1 class="display-2 text-white animated slideInDown mb-4">Appointment</h1>
         <nav aria-label="breadcrumb animated slideInDown">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                <li class="breadcrumb-item"><a href="index.php">Home</a></li>
                 <li class="breadcrumb-item text-white active" aria-current="page">Appointment</li>
             </ol>
         </nav>
@@ -27,7 +26,7 @@ include("include/nav.php");
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="h-100 d-flex flex-column justify-content-center p-5">
                         <h1 class="mb-4">Make Appointment</h1>
-                        <form>
+                        <form id="appointmentForm">
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-floating">
@@ -63,7 +62,11 @@ include("include/nav.php");
                                     <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
                             </div>
+                            <span id="errorMsg" class="text-danger text-center"> </span>
                         </form>
+                        <div id="thanksMsg" style="display: none;">
+                            <p class="text-success">Thank you, we will contact you soon.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
@@ -81,3 +84,29 @@ include("include/nav.php");
 <?php
 include("include/footer.php");
 ?>
+
+<script>
+    document.getElementById("appointmentForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    var gname = document.getElementById("gname").value;
+    var gmail = document.getElementById("gmail").value;
+    var cname = document.getElementById("cname").value;
+    var cage = document.getElementById("cage").value;
+    var message = document.getElementById("message").value;
+
+    if (gname.trim() !== "" && gmail.trim() !== "" && cname.trim() !== "" && cage.trim() !== "") {
+        document.getElementById("appointmentForm").style.display = "none";
+        document.getElementById("thanksMsg").style.display = "block";
+   
+        setTimeout(function () {
+            document.getElementById("appointmentForm").style.display = "block";
+            document.getElementById("thanksMsg").style.display = "none";
+            document.getElementById("appointmentForm").reset();
+        }, 5000);
+    } else {
+        document.getElementById("errorMsg").textContent = "Please fill out all fields.";
+    }
+});
+
+</script>

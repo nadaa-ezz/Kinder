@@ -49,8 +49,8 @@ include("include/nav.php");
             <div class="row g-0">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="h-100 d-flex flex-column justify-content-center p-5">
-                        <p class="mb-4">Get in touch with us.</p>
-                        <form>
+                        <p class="mb-4">Make an appointment</p>
+                        <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-floating">
@@ -79,13 +79,17 @@ include("include/nav.php");
                                 <div class="col-12">
                                     <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
                                 </div>
+                                <span  id="errorMsg"> </span>
                             </div>
                         </form>
+                        <div id="thanksMsg" style="display: none;">
+                            <p>Thank you, we will contact you soon.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                            <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.08930680945!2d31.215387975322415!3d30.06297447491424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840e15e1d7e6f%3A0xd29f27179486e22c!2sIsmail%20Mohammed%2C%20Mohammed%20Mazhar%2C%20Zamalek%2C%20Cairo%20Governorate%204271040!5e0!3m2!1sen!2seg!4v1695563630525!5m2!1sen!2seg" frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
+                        <iframe class="position-relative rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.08930680945!2d31.215387975322415!3d30.06297447491424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840e15e1d7e6f%3A0xd29f27179486e22c!2sIsmail%20Mohammed%2C%20Mohammed%20Mazhar%2C%20Zamalek%2C%20Cairo%20Governorate%204271040!5e0!3m2!1sen!2seg!4v1695563630525!5m2!1sen!2seg" frameborder="0" style="min-height: 400px; border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -98,3 +102,28 @@ include("include/nav.php");
 <?php
 include("include/footer.php");
 ?>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    if (name.trim() !== "" && email.trim() !== "" && subject.trim() !== "" && message.trim() !== "") {
+        document.getElementById("contactForm").style.display = "none";
+        document.getElementById("thanksMsg").style.display = "block";
+   
+        setTimeout(function () {
+            document.getElementById("contactForm").style.display = "block";
+            document.getElementById("thanksMsg").style.display = "none";
+            document.getElementById("contactForm").reset();
+        }, 5000);
+    } else {
+        document.getElementById("errorMsg").textContent = "Please fill out all fields.";
+    }
+});
+
+</script>

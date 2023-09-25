@@ -350,7 +350,7 @@ include("include/header.php");
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="h-100 d-flex flex-column justify-content-center p-5">
                         <h1 class="mb-4">Make Appointment</h1>
-                        <form>
+                        <form id="appointmentForm">
                             <div class="row g-3">
                                 <div class="col-sm-6">
                                     <div class="form-floating">
@@ -386,7 +386,11 @@ include("include/header.php");
                                     <button class="btn btn-primary w-100 py-3" type="submit">Submit</button>
                                 </div>
                             </div>
+                            <span id="errorMsg" class="text-danger text-center"> </span>
                         </form>
+                        <div id="thanksMsg" style="display: none;">
+                            <p class="text-success">Thank you, we will contact you soon.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
@@ -407,7 +411,7 @@ include("include/header.php");
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
             <h1 class="mb-3">Our Clients Say!</h1>
-            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+            <p>At Kinder, the heart of our success lies in the experiences and satisfaction of our parents and students. Here's what they have to say about their journey with us</p>
         </div>
         <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
             <div class="testimonial-item bg-light rounded p-5">
@@ -436,7 +440,6 @@ include("include/header.php");
                     <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 90px; height: 90px;">
                     <div class="ps-3">
                         <h3 class="mb-1">Mohammed Magdy</h3>
-                        <span>Profession</span>
                     </div>
                     <i class="fa fa-quote-right fa-3x text-primary ms-auto d-none d-sm-flex"></i>
                 </div>
@@ -449,3 +452,29 @@ include("include/header.php");
 <?php
 include("include/footer.php");
 ?>
+
+<script>
+    document.getElementById("appointmentForm").addEventListener("submit", function (event) {
+    event.preventDefault(); 
+
+    var gname = document.getElementById("gname").value;
+    var gmail = document.getElementById("gmail").value;
+    var cname = document.getElementById("cname").value;
+    var cage = document.getElementById("cage").value;
+    var message = document.getElementById("message").value;
+
+    if (gname.trim() !== "" && gmail.trim() !== "" && cname.trim() !== "" && cage.trim() !== "") {
+        document.getElementById("appointmentForm").style.display = "none";
+        document.getElementById("thanksMsg").style.display = "block";
+   
+        setTimeout(function () {
+            document.getElementById("appointmentForm").style.display = "block";
+            document.getElementById("thanksMsg").style.display = "none";
+            document.getElementById("appointmentForm").reset();
+        }, 5000);
+    } else {
+        document.getElementById("errorMsg").textContent = "Please fill out all fields.";
+    }
+});
+
+</script>
